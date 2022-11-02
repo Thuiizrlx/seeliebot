@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seelie Bot</title>
+  <link rel="stylesheet" href="neve.css">
+  <script>
+	  window.alert("você será redirecionado em 10 segundos!")
+  </script>
+  <meta http-equiv="refresh" content="10; url=http://127.0.0.1:5500/login.html">
+</head>
+<body>
+  <section>
+    <div class="box">
+      <div class="circle">
+        <h2>Happy
+          <br>
+          Christmas
+        </h2>
+      </div>
+    </div>
+  </section>
+  <script>
+    function bubble(){
+      var count = 200;
+      var section = document.querySelector('section');
+      var i =0;
+      while (i< count){
+        var bubble = document.createElement('i');
+
+        var x = Math.floor(Math.random() * window.innerWidth);
+        var y = Math.floor(Math.random() * window.innerHeight);
+        var size = Math.random() * 10;
+        bubble.style.left = x + 'px';
+        bubble.style.top = y + 'px';
+        bubble.style.width = 1 + size +'px';
+        bubble.style.height = 1 + size + 'px';
+
+        bubble.style.animationDuration = 5 + size + 's';
+
+        section.appendChild(bubble);
+        i++
+      }
+    }
+    bubble();
+  </script>
+</body>
+</html>
